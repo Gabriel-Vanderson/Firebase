@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyAXbOGgWlIxbnlDIeNxUof9vM4CG1kro3I",
+            authDomain: "banco-hotel.firebaseapp.com",
+            databaseURL: "https://banco-hotel-default-rtdb.firebaseio.com",
+            projectId: "banco-hotel",
+            storageBucket: "banco-hotel.appspot.com",
+            messagingSenderId: "17413100582",
+            appId: "1:17413100582:web:8c6cee05975b04e28882e7",
+            measurementId: "G-0P3WDVCSF4"
+            };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consulta2.js"></script>
+
+    </head>
+
+    <body>
+        <table id="tbquartos">
+            <tr>
+                <th>Número Chave</th>
+                <th>Número</th>
+            </tr>
+        </table>
+    </body>
+</html>
